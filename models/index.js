@@ -10,4 +10,4 @@ Post.belongsTo(User, {
     onDelete: 'SET NULL'
 });
 
-module.exports = { User }
+module.exports = { User, Post }
