@@ -88,4 +88,27 @@ router.delete('/:id', (req, res) => {
         });
 });
 
+router.post('/login', (req, res) => {
+    User.findOne({
+        where: {
+            email: req.body.email
+        }
+    })
+        .then(dbUserData => {
+            if (!dbUserData) {
+                res.status(400).json({ message: 'No user with that email found' });
+                return;
+            }
+
+            const validPw = dbUserData.checkPassword(req.body.password);
+
+            if (!validPw) {
+                res.status(400).json({ message: 'Incorrect Password!' });
+                return;
+            }
+            
+            res.json({ user: dbUserData, message: 'You are now logged in!' });
+        });
+})
+
 module.exports = router;
