@@ -11,10 +11,13 @@
 <body>
   <div class="wrapper">
     <header>
+
       <h1>
         <a href="/">Tech Blog</a>
       </h1>
+
       <nav>
+        <div>Navigation Below</div>
         {{#if loggedIn}}
         <a href="/dashboard">dashboard</a>
         <button id="logout" class="btn-no-style">logout</button>
@@ -22,15 +25,19 @@
         <a href="/login">login</a>
         {{/if}}
       </nav>
+
     </header>
+
     <main>
+      <div>Body Below</div>
       {{{ body }}}
     </main>
+
     <footer>
-      Thanks for visiting!
+      <div>Footer Below</div>
     </footer>
   </div>
-  
+
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}
