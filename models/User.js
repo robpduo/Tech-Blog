@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
+const router = require('../controllers/api');
 
 class User extends Model {
     checkPassword(LoginPw) {
@@ -55,5 +56,16 @@ User.init(
         modelName: 'user'
     }
 );
+
+
+router.post('/logout', (req, res) => {
+    if(req.session.loggedIn) {
+        req.session.destroy(() => {
+            res.status(204).end();
+        });
+    } else {
+        res.status(404).end();
+    }
+});
 
 module.exports = User; 
