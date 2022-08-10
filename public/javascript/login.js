@@ -22,6 +22,8 @@ async function loginFormHandler(event) {
         } else {
             alert(response.statusText);
         }
+    } else {
+        alert('All fields must be filled in');
     }
 }
 
