@@ -25,6 +25,13 @@ Heroku - app deployment</br>
   
 Insomnia - Endpoint testing software</br>
 
+## To Run / Develop
+1. clone the repository at https://github.com/robpduo/Tech-Blog.git
+2. run `npm install` at the root directory
+3. setup mysql database byby opening mysql in the terminal with `mysql -u root -p` followed by `source db/schema.db`
+4. seed data into the database tables on node.js using `npm run seed` in the root directory
+5. to start the application enter `npm start` and connect to `localhost:3001` in a browser
+
 ## Usages
 Sign-In
 ![image](https://user-images.githubusercontent.com/101683611/184024778-be602d16-b69d-47fb-b733-f48ae6202622.png)
