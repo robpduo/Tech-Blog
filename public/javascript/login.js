@@ -18,7 +18,7 @@ async function loginFormHandler(event) {
         // navigate to dashboard when user successfully logs in
         if (response.ok) {
             // document.location.replace('/dashboard/');
-            document.location.replace('/');
+            document.location.replace('/dashboard');
         } else {
             alert(response.statusText);
         }

@@ -188,6 +188,17 @@ main {
     margin-bottom: 5%;
 }
 
+.edit-post-title-field {
+    padding: 10px;
+    line-height: 20px;
+    width: 30%;
+}
+.edit-post-content-field {
+    padding: 10px;
+    line-height: 20px;
+    width: 30%;
+}
+
 footer {
     border-top: 1px solid #ccc;
     display: flex;
