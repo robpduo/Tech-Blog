@@ -1,5 +1,8 @@
 # Tech-Blog
 
+## Deployed Application
+https://boiling-temple-73920.herokuapp.com</br>
+
 ## Technology
 Javascript - scripting language </br>
 
