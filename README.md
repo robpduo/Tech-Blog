@@ -32,4 +32,8 @@ Sign-up
 Dashboard
 ![image](https://user-images.githubusercontent.com/101683611/184025175-25af357b-ced8-40b1-8e03-0d33d38a8287.png)
 
+Edit Posts
+![image](https://user-images.githubusercontent.com/101683611/184025261-d5b8df36-c5f8-47d7-a906-b1d7a79c2681.png)
+
+
 
