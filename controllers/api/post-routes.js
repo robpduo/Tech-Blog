@@ -39,9 +39,28 @@ router.get('/:id', (req, res) => {
             {
                 model: User,
                 attributes: ['id']
+            },
+            {
+                model: Comment,
+                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                include: {
+                    model: User,
+                    attributes: ['username']
+                }
             }
         ]
     })
+        .then(dbPostData => {
+            if (!dbPostData) {
+                res.status(404).json({ message: 'No post found with this id' });
+                return;
+            }
+            res.json(dbPostData);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
 })
 
 // create a new post on the current session
@@ -87,17 +106,17 @@ router.delete('/:id', withAuth, (req, res) => {
             id: req.params.id
         }
     })
-    .then(dbPostData => {
-        if(!dbPostData) {
-            res.status(404).json({ message: 'No post found with this id'});
-            return;
-        }
-        res.json(dbPostData);
-    })
-    .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-    })
+        .then(dbPostData => {
+            if (!dbPostData) {
+                res.status(404).json({ message: 'No post found with this id' });
+                return;
+            }
+            res.json(dbPostData);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        })
 });
 
 module.exports = router;
