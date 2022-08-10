@@ -3,6 +3,9 @@
 ## Deployed Application
 https://boiling-temple-73920.herokuapp.com</br>
 
+## Description
+Tech - Blog — a website where users can post and comment on user content. Tech blog uses Sequelize, an object-relational mapping (ORM) library, to simplify MySQL queries, add password hashing so that users can create secure passwords, and the application is connected to JawsDB, a MySQL add-on for Heroku.
+
 ## Technology
 Javascript - scripting language </br>
 
