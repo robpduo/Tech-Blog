@@ -94,7 +94,7 @@ header {
 .single_post {
     border-style: solid;
     border-radius: 10px;
-    padding: 10px;;
+    padding: 10px;
 }
 
 .single_post:hover {
@@ -144,6 +144,7 @@ main {
     border-style: solid;
     border-radius: 15px;
     padding: 10px;
+    background-color: aquamarine;
 }
 
 .edit-link {
