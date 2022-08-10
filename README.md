@@ -35,5 +35,8 @@ Dashboard
 Edit Posts
 ![image](https://user-images.githubusercontent.com/101683611/184025261-d5b8df36-c5f8-47d7-a906-b1d7a79c2681.png)
 
+Home Page
+![image](https://user-images.githubusercontent.com/101683611/184025462-b10f0888-b587-4be1-ae59-54b2649c1b68.png)
+
 
 
